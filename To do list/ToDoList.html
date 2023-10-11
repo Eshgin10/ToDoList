@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <link rel="stylesheet" href="/reset.css">
+    <link rel="stylesheet" href="/ToDoList.css">
+</head>
+
+<body>
+    <div class="all">
+        <div class="container">
+            <div class="todolist">
+                <div class="header">
+                    <h1>Todo List</h1>
+                </div>
+                <div class="main">
+                    <div class="input">
+                        <input id="input" type="text">
+                        <select id="emoji-select" onchange="addEmojiFromSelect(this.value)">
+                            <option value="😊">😊</option>
+                            <option value="💼">💼</option>
+                            <option value="🖥️">🖥️</option>
+                            <option value="📂">📂</option>
+                            <option value="🗄️">🗄️</option>
+                            <option value="📎">📎</option>
+                            <option value="✏️">✏️</option>
+                            <option value="📆">📆</option>
+                            <option value="📋">📋</option>
+                            <option value="📇">📇</option>
+                            <option value="📝">📝</option>
+                            <option value="📌">📌</option>
+                            <option value="📎">📎</option>
+                            <option value="📚">📚</option>
+                            <option value="📁">📁</option>
+                            <option value="📊">📊</option>
+                            <option value="🗂️">🗂️</option>
+                            <option value="📐">📐</option>
+                            <option value="📏">📏</option>
+                            <option value="📇">📇</option>
+                            <option value="📜">📜</option>
+                            <option value="📠">📠</option>
+                            <option value="🗑️">🗑️</option>
+                            <option value="🖨️">🖨️</option>
+                            <option value="📇">📇</option>
+                            <option value="📤">📤</option>
+                            <option value="📥">📥</option>
+                            <option value="📅">📅</option>
+                            <option value="📊">📊</option>
+                            <option value="📈">📈</option>
+                            <option value="📉">📉</option>
+                            <option value="💻">💻</option>
+                            <option value="📱">📱</option>
+                            <option value="☎️">☎️</option>
+                            <option value="🖋️">🖋️</option>
+                            <option value="📄">📄</option>
+                            <option value="📫">📫</option>
+                            <option value="📥">📥</option>
+                            <option value="🗂️">🗂️</option>
+                            <option value="📇">📇</option>
+                            <option value="📜">📜</option>
+                            <option value="🔍">🔍</option>
+                        </select>
+                        <button onclick="add()">Add!</button>
+                    </div>
+                    <div class="output">
+                        <ul id="demo">
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/fa0524442a.js" crossorigin="anonymous"></script>
+    <script src="/ToDoList.js"></script>
+</body>
+
+</html>
